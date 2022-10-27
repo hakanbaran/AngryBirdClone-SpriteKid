@@ -225,7 +225,7 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             
             if birdPhysicsBody.velocity.dx <= 0.1 && birdPhysicsBody.velocity.dy <= 0.1 && birdPhysicsBody.angularVelocity <= 0.1 && gameStarted == true {
                 
-                bird.physicsBody?.affectedByGravity = true
+                bird.physicsBody?.affectedByGravity = false
                 bird.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
                 bird.physicsBody?.angularVelocity = 0
                 bird.zPosition = 1
